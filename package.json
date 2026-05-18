@@ -30,10 +30,11 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "lint": "tsc --noEmit",
-    "clean": "rm -rf dist"
+    "clean": "rm -rf dist",
+    "prepublishOnly": "bun run build"
   },
   "peerDependencies": {
-    "@veridex/sdk": ">=1.0.1",
+    "@veridex/sdk": "1.1.3",
     "react": ">=18.0.0"
   },
   "devDependencies": {
@@ -55,5 +56,19 @@
     "webauthn",
     "wallet",
     "web3"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Veridex-Protocol/veridex-react.git"
+  },
+  "homepage": "https://github.com/Veridex-Protocol/veridex-react#readme",
+  "bugs": {
+    "url": "https://github.com/Veridex-Protocol/veridex-react/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
 }
